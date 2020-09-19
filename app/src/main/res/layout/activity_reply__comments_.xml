@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bossble.bossble.Comments.Reply_Comments_Activity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/dark_blue"
+        android:padding="10sp"
+        android:id="@+id/relative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replies"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:id="@+id/heading"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/relative"
+        android:id="@+id/maincomment"
+        android:visibility="gone"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2"
+
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:riv_corner_radius="100dp"
+                android:src="@drawable/bossble_placeholder_large"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/imgpeople"
+                android:background="@drawable/black_opacity_bg"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/imgpeople"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:background="@drawable/comment_background"
+                android:id="@+id/linear">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Smith"
+                    android:textColor="@color/dark_blue_f"
+                    android:id="@+id/txtpeoplename"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hey"
+                    android:textColor="@color/dark_blue_f"
+                    android:id="@+id/txtcomment"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear"
+                android:layout_toRightOf="@id/imgpeople"
+                android:layout_marginLeft="20sp"
+                android:text="Reply"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/txtreply"
+                android:textSize="12sp"
+                android:padding="5dp"
+
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maincomment"
+        android:id="@+id/recyclerreply"
+        android:layout_marginBottom="?actionBarSize"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="40dp"
+        android:hint="@string/WriteaComment"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_shape"
+        android:id="@+id/edcomment"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_name"
+        android:layout_alignParentBottom="true"
+        android:padding="0dp"
+        android:tint="@color/dark_blue_f"
+        android:layout_marginBottom="12sp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgcomment"
+        />
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="215dp"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="215dp"
+        android:layout_height="220dp"
+        android:src="@drawable/bossble_placeholder_large"
+        app:riv_corner_radius="5dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/image"
+        />
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:riv_corner_radius="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/trending_challenge_01"
+        android:id="@+id/userimage"
+        app:riv_border_width="1dp"
+        app:riv_border_color="@color/white"
+        android:background="@drawable/white_opacity_background"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_post_image"
+        android:tint="@color/alphawhite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/mediatype"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/black_gradient"
+        android:layout_alignParentBottom="true"
+        >
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="130dp"
+        android:id="@+id/name"
+        android:textColor="@color/white"
+        android:text="name asdasdasdasdasdasdadaa"
+        android:layout_above="@+id/locationname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="17sp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="130dp"
+        android:id="@+id/locationname"
+        android:textColor="@color/white"
+        android:text="Location"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="13dp"
+        android:textSize="10sp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

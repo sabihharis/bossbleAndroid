@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bossble.bossble.OnBoarding.On_Boarding_Activity">
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="fill_parent"/>
+
+    <com.crystalviewpager.widgets.CrystalViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ctl_vp_transition="flip_horizontal"
+        />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        app:ci_drawable="@drawable/selected"
+        app:ci_drawable_unselected="@drawable/unselected"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="skip"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:id="@+id/txtskip"
+        />
+    <Button
+        android:cursorVisible="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="58dp"
+        android:textColor="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_curve"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:id="@+id/btncontinue"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

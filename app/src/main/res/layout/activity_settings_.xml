@@ -1,0 +1,540 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.Settings_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/r1"
+        android:background="@drawable/screen_header">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Settings"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/txtsettings"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/r1"
+        android:id="@+id/scroll"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/r2"
+            android:layout_below="@id/r1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r10"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/edit_profile_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgeditprofile"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/EditProfile"
+                    android:layout_toRightOf="@id/imgeditprofile"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txteditprofile"
+                    >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow"
+                    >
+                </ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imgeditprofile"
+                    android:id="@+id/v1"
+                    ></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r10"
+                android:id="@+id/r11"
+                >
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/blocked_accounts_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgblockuser"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BlockedAccounts"
+                    android:layout_toRightOf="@id/imgblockuser"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtblockuser"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow2"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imgblockuser"
+                    android:id="@+id/v2"
+                    ></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r11"
+                android:id="@+id/r12"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/report_user_post_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgreport"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ReportUserPost"
+                    android:layout_toRightOf="@id/imgreport"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtreport"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow3"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imgreport"
+                    android:id="@+id/v3"
+                    ></View>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r12"
+                android:id="@+id/r13"
+                >
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/legal_icon"
+                    android:layout_marginTop="20dp"
+
+                    android:id="@+id/imglegal"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Legal"
+                    android:layout_toRightOf="@id/imglegal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtlegal"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow4"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imglegal"
+                    android:id="@+id/v4"
+                    ></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r13"
+                android:id="@+id/r14"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/support_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgsupport"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Support"
+                    android:layout_toRightOf="@id/imgsupport"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtsupport"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow5"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imgsupport"
+                    android:id="@+id/v5"
+                    ></View>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r14"
+                android:id="@+id/r15"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/share_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgshare"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SharetheApp"
+                    android:layout_toRightOf="@id/imgshare"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtshare"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow6"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imgshare"
+                    android:id="@+id/v6"
+                    ></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r15"
+                android:id="@+id/r16"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/notifications_settings_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgnotifications"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NotificationsSetting"
+                    android:layout_toRightOf="@id/imgnotifications"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtnotifications"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow7"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imgnotifications"
+                    android:id="@+id/v7"
+                    ></View>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r16"
+                android:id="@+id/r17"
+                >
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/languages_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imglanguage"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Languages"
+                    android:layout_toRightOf="@id/imglanguage"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtlanguage"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow8"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imglanguage"
+                    android:id="@+id/v8"
+                    ></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r17"
+                android:id="@+id/r18"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/logout_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imglogout"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Logout"
+                    android:layout_toRightOf="@id/imglogout"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtlogout"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow9"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/imglogout"
+                    android:id="@+id/v9"
+                    ></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r18"
+                android:id="@+id/r19"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/deactivate_account_icon"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgdeactiveate"
+                    >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DeactivateAccount"
+                    android:layout_toRightOf="@id/imgdeactiveate"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:id="@+id/txtdeativate"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgarrow10"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:layout_below="@+id/imgdeactiveate"
+                    android:id="@+id/v10"
+                    android:layout_marginBottom="20dp"
+                    ></View>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

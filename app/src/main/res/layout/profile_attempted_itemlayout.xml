@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="145dp"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    >
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="145dp"
+        android:layout_height="130dp"
+        android:src="@drawable/campaign_02"
+        app:riv_corner_radius="5sp"
+        android:scaleType="centerCrop"
+        android:id="@+id/image"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_post_image"
+        android:tint="@color/alphawhite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/mediatype"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/black_gradient"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        >
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="80dp"
+        android:id="@+id/name"
+        android:textColor="@color/white"
+        android:text="Climb a Tree"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginRight="5dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bossble.bossble.OnBoarding.Fragment_OnBorading_2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Campaings"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:id="@+id/txtcampaign"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive the"
+        android:textSize="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:id="@+id/txtdrive"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change!"
+        android:textSize="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/txtdrive"
+        android:id="@+id/txtchange"
+        />
+
+</RelativeLayout>

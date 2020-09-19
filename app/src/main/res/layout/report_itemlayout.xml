@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:riv_corner_radius="100dp"
+        android:src="@drawable/challenge_near_01"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/imgpeople"
+        android:background="@drawable/black_opacity_bg"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgpeople"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:text="John Smith"
+        android:textColor="@color/dark_blue_f"
+        android:id="@+id/txtpeoplename"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berlin"
+        android:layout_below="@+id/txtpeoplename"
+        android:layout_toRightOf="@id/imgpeople"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/dark_blue_f"
+        android:id="@+id/txtcountry"
+        android:visibility="gone"
+        />
+
+
+
+
+</RelativeLayout>

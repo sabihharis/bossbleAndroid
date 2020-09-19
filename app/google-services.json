@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "268459756530",
+    "firebase_url": "https://bossble1-1589451445077.firebaseio.com",
+    "project_id": "bossble1-1589451445077",
+    "storage_bucket": "bossble1-1589451445077.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268459756530:android:1c276a286bc62745c1b96b",
+        "android_client_info": {
+          "package_name": "com.bossble.bossble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268459756530-agtbd16tgkb8fgmbfmi0b4nsb4r7pghv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bossble.bossble",
+            "certificate_hash": "70f055a19db7522cfecfe0022416efec964f5bf7"
+          }
+        },
+        {
+          "client_id": "268459756530-vrr9b1qmt1iftqqq0ikabnibogtcabmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc5U2JUwKEd5hxbG4RT8lXQw08i6Ae3QI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268459756530-vrr9b1qmt1iftqqq0ikabnibogtcabmo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "268459756530-2uaemtkd9lrl69qlip0i8hbimqkdstta.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bossble.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="fill_parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bossble_full_logo_new"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:id="@+id/logo"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/l1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="LOG"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_below="@id/logo"
+                android:id="@+id/txtlog"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtlog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="IN"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_below="@id/logo"
+                android:id="@+id/txtin"
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_curve_transparent"
+            android:hint="Phone number with national code/Email"
+            android:textColorHint="@color/white"
+            android:id="@+id/edemail"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edemail"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="add your country code without '+' prefix. i.e 92"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:id="@+id/txthint"
+
+            />
+
+        <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txthint"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_curve_transparent"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            app:tint_color="@android:color/white"
+            android:id="@+id/edpassword"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edpassword"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:text="Forgot Password?"
+            android:drawableLeft="@drawable/info_icon"
+            android:drawablePadding="5dp"
+            android:id="@+id/txtforgot"
+            />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/txtforgot"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/dark_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_selector"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:id="@+id/btnlogin"
+            android:elevation="20dp"
+
+            />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/btnlogin"
+            android:layout_marginTop="?actionBarSize"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:id="@+id/l2"
+
+            >
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to Bossble?"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:id="@+id/txtnew"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="CREATE ACCOUNT"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:id="@+id/txtaccount"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="BallPulseIndicator"
+        />
+
+
+    </RelativeLayout>
+

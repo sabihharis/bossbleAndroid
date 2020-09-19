@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.Notification_Setting_Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_header"
+        android:scaleType="centerCrop"
+        android:id="@+id/imgheader"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/NotificationsSetting"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtnotification"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/r1"
+        android:layout_below="@id/imgheader"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PrivateMessages"
+            android:id="@+id/txtprivate"
+            android:textSize="15sp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switchprivate"
+            android:checked="true"
+            android:theme="@style/SwitchTheme"
+            android:buttonTint="@color/dark_blue_f"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:layout_below="@id/txtprivate"
+            android:id="@+id/v1"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/r1"
+        android:id="@+id/r2"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AdmireAdmiring"
+            android:id="@+id/txtadmire"
+            android:textSize="15sp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switchadmire"
+            android:checked="true"
+            android:theme="@style/SwitchTheme"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:layout_below="@id/txtadmire"
+            android:id="@+id/v2"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/r2"
+        android:id="@+id/r3"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChallengeRequest"
+            android:id="@+id/txtchallenge"
+            android:textSize="15sp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switchchallenge"
+            android:checked="true"
+            android:theme="@style/SwitchTheme"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:layout_below="@id/txtchallenge"
+            android:id="@+id/v3"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/r3"
+        android:id="@+id/r4"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Comments"
+            android:id="@+id/txtcomments"
+            android:textSize="15sp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switchcomments"
+            android:checked="true"
+            android:theme="@style/SwitchTheme"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:layout_below="@id/txtcomments"
+            android:id="@+id/v4"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/r4"
+        android:id="@+id/r5"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Likes"
+            android:id="@+id/txtlikes"
+            android:textSize="15sp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switchlikes"
+            android:checked="true"
+            android:theme="@style/SwitchTheme"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:layout_below="@id/txtlikes"
+            android:id="@+id/v5"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/r5"
+        android:id="@+id/r6"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChatNotifications"
+            android:id="@+id/txtchat"
+            android:textSize="15sp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switchchat"
+            android:checked="true"
+            android:theme="@style/SwitchTheme"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:layout_below="@id/txtchat"
+            android:id="@+id/v6"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/r6"
+        android:id="@+id/r7"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Near"
+            android:id="@+id/txtnear"
+            android:textSize="15sp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switchnear"
+            android:checked="true"
+            android:theme="@style/SwitchTheme"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black"
+            android:layout_below="@id/txtnear"
+            android:id="@+id/v7"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+
+</RelativeLayout>

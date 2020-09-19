@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Details.Details_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/sv"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bossble_placeholder_large"
+                app:riv_corner_radius="5dp"
+                android:visibility="gone"
+
+
+                />
+
+            <com.crystalviewpager.widgets.CrystalViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_alignBottom="@+id/viewPager"
+                app:ci_drawable="@drawable/selected_circle"
+                app:ci_drawable_unselected="@drawable/unselected_circle"
+                android:layout_marginBottom="20dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:text="text"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="150dp"
+                android:id="@+id/text"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <RelativeLayout
+
+                android:id="@+id/opacitycover"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/blackopacity_curve">
+
+                <LinearLayout
+                    android:id="@+id/likelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/like_coins_curve"
+                    android:orientation="horizontal"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="4dp"
+                    android:visibility="gone">
+
+
+
+                    <ImageView
+                        android:id="@+id/gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gold_rank_icon" />
+
+                    <ImageView
+                        android:id="@+id/silver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/silver_rank_icon" />
+
+                    <ImageView
+                        android:id="@+id/bronze"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bronze_rank_icon"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableLeft="@drawable/bossble_ranking_icon"
+                    android:text=" 3.2K"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@+id/like"
+                    android:drawableLeft="@drawable/comments_icon"
+                    android:text=" 128"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@+id/comment"
+                    android:drawableLeft="@drawable/views_icon"
+                    android:text=" 15K"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_options"
+                    android:id="@+id/reportblock"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/gradient_overlay">
+
+            </View>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:src="@drawable/back_btn" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/userimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/back"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/user_01"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="0.5dp"
+                app:riv_corner_radius="50dp"
+                android:background="@drawable/white_opacity_background"/>
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/userimage"
+                android:text="Sebastian Bach"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usercountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/userimage"
+                android:text="country"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:id="@+id/coinsreadinglayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="17.5dp"
+                android:layout_alignParentEnd="true"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/like_coins_curve"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/maincoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gold_rank_icon"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/bronzereading"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/bronze_rank_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="1.2K"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:id="@+id/firsttxt"/>
+
+
+                <ImageView
+                    android:id="@+id/silverreading"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/silver_rank_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="1.2K"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:id="@+id/secondtxt"/>
+
+                <ImageView
+                    android:id="@+id/goldreading"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/gold_rank_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="1.2K"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:id="@+id/thirdtxt"/>
+            </LinearLayout>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="22dp"
+                android:src="@drawable/gold_rank_icon" />
+
+            <TextView
+                android:id="@+id/challengename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPager"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Quickest Rubik"
+                android:textColor="@color/dark_blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/challengetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/challengename"
+                android:layout_marginLeft="20dp"
+                android:text="Location"
+                android:visibility="gone"
+                android:textColor="@color/dark_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/challengetxt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:text="description"
+                android:textColor="@color/dark_gray_font" />
+
+            <TextView
+                android:id="@+id/hashtags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="#dogfight #fastestrubik #speeddevils"
+                android:textColor="@color/dark_gray_font" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/hashtags"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative">
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/gold_medal_android"
+                    android:id="@+id/medal1">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/joined_02"
+                    app:riv_corner_radius="50dp"
+                    android:id="@+id/joined_user1"
+                    android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1st"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/medal1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/fst"
+                    android:textSize="12sp"/>
+
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/silver_medal_android"
+                    android:id="@+id/medal2"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/joined_06"
+                    app:riv_corner_radius="50dp"
+                    android:id="@+id/joined_user2"
+                    android:layout_centerInParent="true"
+                    />
+                </RelativeLayout>
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2nd"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/medal2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/scnd"/>
+
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/bronze_medal_android"
+                    android:id="@+id/medal3"
+                    android:layout_alignParentEnd="true"
+                    >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/joined_14"
+                    app:riv_corner_radius="50dp"
+                    android:id="@+id/joined_user3"
+                    android:layout_centerInParent="true"
+
+                    />
+                </RelativeLayout>
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3rd"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/medal3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/thrd"/>
+
+                <!--
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="70dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/joined_10"
+                                app:riv_corner_radius="10dp"
+                                android:elevation="2dp"
+                                android:id="@+id/joined_user4"
+                                android:visibility="gone"/>
+                -->
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/peoplejoined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="40 people joined"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/peoplejoinedRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/peoplejoined"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="70dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:id="@+id/linearjoin"
+
+        >
+        <LinearLayout
+            android:id="@+id/innerlinear"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/join"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".5"
+                android:background="@drawable/yellow_btn_curve"
+                android:text="@string/jointhischallenge"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_blue" />
+
+            <ImageView
+                android:id="@+id/options"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_weight=".15"
+                android:src="@drawable/share_icon"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:id="@+id/linearaccept"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/accept_background"
+                android:text="ACCEPT"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/accept_challenge_icon"
+                android:paddingRight="5dp"
+                />
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/reject_background"
+                android:text="reject"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_blue"
+                android:layout_marginLeft="20dp"
+                android:drawableRight="@drawable/decline_challenge_icon"
+                android:paddingRight="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+
+
+</RelativeLayout>

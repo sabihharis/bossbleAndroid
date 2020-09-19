@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark_blue">#262335</color>
+    <color name="dark_purple">#3D385C</color>
+    <color name="white">#ffffff</color>
+    <color name="offwhite">#F5F5F5</color>
+
+    <color name="dark_blue_f">#353C56</color>
+    <color name="dark_gray_font">#71788D</color>
+    <color name="black">#000000</color>
+    <color name="golden">#F0C30E</color>
+    <color name="transparent">#00ff001C</color>
+    <color name="darkgray">#919782</color>
+    <color name="notificationsblue">#D8F8FF</color>
+    <color name="alphawhite">#66ffffff</color>
+    <color name="bronze">#CD7F32</color>
+    <color name="silver">#AAA9AD</color>
+    <color name="diamond">#3C9DB7</color>
+
+    <color name="goldcoin">#EFC75E</color>
+    <color name="silvercoin">#989A9A</color>
+    <color name="bronzecoin">#EF9E5B</color>
+    <color name="lightfbcolor">#3478E5</color>
+
+</resources>

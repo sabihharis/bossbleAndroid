@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/r2"
+
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:riv_corner_radius="100dp"
+            android:src="@drawable/bossble_placeholder_large"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imgpeople"
+            android:background="@drawable/black_opacity_bg"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/imgpeople"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/comment_background"
+            android:id="@+id/linear">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Smith"
+                android:textColor="@color/dark_blue_f"
+                android:id="@+id/txtpeoplename"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey"
+                android:layout_below="@+id/txtpeoplename"
+                android:textColor="@color/dark_blue_f"
+                android:id="@+id/txtcomment"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_toRightOf="@id/imgpeople"
+            android:layout_marginLeft="20sp"
+            android:text="@string/Reply"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/txtreply"
+            android:textSize="12sp"
+            android:padding="5dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_toRightOf="@id/txtreply"
+            android:text="@string/Edit"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/edit"
+            android:textSize="12sp"
+            android:padding="5dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_toRightOf="@id/edit"
+            android:text="@string/Delete"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/delete"
+            android:textSize="12sp"
+            android:padding="5dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_toRightOf="@id/delete"
+            android:layout_marginLeft="5dp"
+            android:text="View replies"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/viewreplies"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtreply"
+            android:id="@+id/recyclerreply"
+            android:visibility="gone"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_outline_curve"
+            android:layout_below="@id/viewreplies" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

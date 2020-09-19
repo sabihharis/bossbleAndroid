@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.EditProfile_Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:src="@drawable/screen_header"
+        android:scaleType="centerCrop"
+        android:id="@+id/header"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EditProfile"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtprofile"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_btn"
+        android:layout_marginTop="13dp"
+        android:padding="10dp"
+        android:id="@+id/back"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fulllogo"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fulllogo"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:id="@+id/txteditprofile"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txteditprofile"
+                android:textColor="@color/dark_purple"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/FULLNAME"
+                android:id="@+id/txtfullname"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:hint="@string/FullName"
+                android:background="@drawable/edittext_shape"
+                android:layout_below="@id/txtfullname"
+                android:id="@+id/edfullname"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edfullname"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dark_purple"
+                android:text="@string/BIO"
+                android:id="@+id/txtbio"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="80dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Tellusabitaboutyourself"
+                android:background="@drawable/edittext_shape"
+                android:layout_below="@id/txtbio"
+                android:id="@+id/edbio"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edbio"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dark_purple"
+                android:text="@string/EMAILADDRESS"
+                android:id="@+id/txtemail"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Enteryouremailaddress"
+                android:background="@drawable/edittext_shape"
+                android:layout_below="@id/txtemail"
+                android:id="@+id/edemail"
+                android:inputType="textEmailAddress"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edemail"
+                android:textColor="@color/dark_purple"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="PHONE NUMBER"
+                android:id="@+id/txtphone"
+                android:visibility="gone"
+                />
+            <!-- <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:paddingLeft="10dp"
+                 android:layout_marginTop="5dp"
+                 android:hint="Enter your phone number"
+                 android:background="@drawable/edittext_shape"
+                 android:layout_beavalow="@id/txtphone"
+                 android:id="@+id/edphone"
+                 />-->
+
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                app:ccp_defaultNameCode="DE"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtphone"
+                android:id="@+id/select_code"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/country_code"
+                android:drawablePadding="20dp"
+                android:inputType="number"
+                android:visibility="gone"
+                >
+            </com.rilixtech.widget.countrycodepicker.CountryCodePicker>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:background="@drawable/phone_number_shape"
+                android:layout_below="@id/txtphone"
+                android:layout_toRightOf="@id/select_code"
+                android:id="@+id/edphone"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edphone"
+                android:textColor="@color/dark_purple"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/COUNTRY"
+                android:id="@+id/txtcountry"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Country"
+                android:background="@drawable/edittext_shape"
+                android:layout_below="@id/txtcountry"
+                android:id="@+id/edcountry"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edcountry"
+                android:textColor="@color/dark_purple"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/SECURITY"
+                android:id="@+id/txtsecurity"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtsecurity"
+                android:background="@drawable/edittext_shape"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/r3"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/change_password_icon"
+                    android:id="@+id/imgchangepassword"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgchangepassword"
+                    android:text="@string/ChangePassword"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtchangepassword"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/forward_arrow"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/arrow"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/r3"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_purple_curve"
+                android:text="@string/SAVE"
+                android:textAllCaps="false"
+                android:id="@+id/btnsave"
+                />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+
+
+
+</RelativeLayout>

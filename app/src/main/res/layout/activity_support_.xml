@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.Support_Activity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/r1"
+        android:background="@drawable/screen_header">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Support"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/txtsupport"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/supporttxt"
+        android:id="@+id/txtdes1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/emailheading"
+        android:layout_below="@+id/txtdes1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/dark_blue"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="support@bossble.com."
+        android:layout_below="@+id/emailheading"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/supportemailbackground"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawableTint="@color/dark_blue"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/email"
+        />
+
+
+</RelativeLayout>

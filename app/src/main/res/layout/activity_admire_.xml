@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bossble.bossble.ProfileSetup.Admire_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/noadmire"
+        android:id="@+id/noadmire"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:src="@drawable/screen_header"
+        android:scaleType="centerCrop"
+        android:id="@+id/header"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bossble_full_logo_new"
+        android:id="@+id/fulllogo"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_btn"
+        android:layout_marginTop="13dp"
+        android:padding="10dp"
+        android:id="@+id/back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:id="@+id/sv"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ADMIRERS"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/dark_blue"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/heading"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/searchadmire"
+                android:maxLines="1"
+                android:background="@drawable/search_ed_background"
+                android:padding="15dp"
+                android:id="@+id/search"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycleradmire"
+                android:layout_below="@+id/search"
+                android:layout_marginBottom="?actionBarSize"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/createdialog_curve"
+        android:id="@+id/relative"
+        android:visibility="gone"
+        android:paddingBottom="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="what do you want to create?"
+            android:textSize="18sp"
+            android:id="@+id/text"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_text_curve"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+        <!--
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/text"
+                    android:weightSum="2"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    >
+        -->
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/create_campaign_icon"
+            android:text="campaign"
+            android:drawablePadding="10dp"
+            android:id="@+id/createcampaign"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/create_challenge_icon"
+            android:text="challenge"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/createchallenge"
+            android:layout_below="@+id/text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"/>
+
+
+        <!--
+                </LinearLayout>
+        -->
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_navigation">
+
+    </include>
+</RelativeLayout>

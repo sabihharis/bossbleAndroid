@@ -1,0 +1,382 @@
+<resources>
+    <string name="app_name">Bossble</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">236453797798155</string>
+    <string name="fb_login_protocol_scheme">fb236453797798155</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="api_key">AIzaSyBMngaPSgufYrW0BuWHLsCweOjMzI_xuVA</string>
+    <!--<string name="api_key">AIzaSyDc5U2JUwKEd5hxbG4RT8lXQw08i6Ae3QI</string>-->
+
+
+    <!--comments-->
+    <string name="Reply">Reply</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="Deletee">DELETE</string>
+
+    <!--show all-->
+    <string name="name">name</string>
+    <string name="description">description</string>
+    <string name="LoadMore">Load More...</string>
+
+    <!--trending item-->
+    <string name="JOIN">JOIN</string>
+    <string name="peoplejoined">people joined</string>
+    <string name="SeeAll">See All</string>
+
+    <!--camera xml-->
+    <string name="photo">photo</string>
+    <string name="video">video</string>
+
+    <!--camera java-->
+    <string name="Images">Images</string>
+    <string name="Videos">Videos</string>
+    <string name="SelectFrom">Select From</string>
+    <string name="Sorrycamerapermissionisnecessary">Sorry, camera permission is necessary</string>
+    <string name="Mediashouldbelessthan20MB">Media should be less than 20MB</string>
+    <string name="PermissionRequired">Permission Required!</string>
+    <string name="Cannotselectvideo">Cannot select video</string>
+    <string name="CannotselectTextChallenge">Cannot select Text Challenge</string>
+    <string name="Cannotselectmorethan6pictures">Cannot select more than 6 pictures</string>
+    <string name="Cannotselectmorethan5pictures">Cannot select more than 5 pictures</string>
+    <string name="Cannotselectmorethan4pictures">Cannot select more than 4 pictures</string>
+    <string name="Cannotselectmorethan3pictures">Cannot select more than 3 pictures</string>
+    <string name="Cannotselectmorethan2pictures">Cannot select more than 2 pictures</string>
+    <string name="Cannotselectmorethan1pictures">Cannot select more than 1 pictures</string>
+    <string name="GotoAppsettingsPermissionsCameraandStorageenableit">Go to App settings > Permissions > Camera and Storage > enable it</string>
+
+    <!--image preview xml-->
+    <string name="createyourchallenge">create your challenge</string>
+
+    <!--image preview java-->
+    <string name="createyourcampaign">create your campaign</string>
+    <string name="joinNthiscampaign">join this campaign</string>
+    <string name="joinNthischallenge">join this challenge</string>
+    <string name="AttemptedSuccessfully">Attempted Successfully</string>
+    <string name="NoMediaAdded">No Media Added</string>
+
+    <!--create campaign xml-->
+    <string name="STARTACAMPAIGN">START A CAMPAIGN</string>
+    <string name="CAMPAIGNTITLE">CAMPAIGN TITLE</string>
+    <string name="describethiscampaign">describe this campaign</string>
+    <string name="HASHTAGS">#HASHTAGS</string>
+    <string name="MEDIAYOUADDED">MEDIA YOU ADDED</string>
+    <string name="STARTTHISCAMPAIGN">START THIS CAMPAIGN</string>
+    <string name="whatdoyouwanttocreate">what do you want to create?</string>
+    <string name="campaign">campaign</string>
+    <string name="challenge">challenge</string>
+
+
+    <!--create campaign java-->
+    <string name="Doyouwanttocancelyourcampaign">Do you want to cancel your campaign?</string>
+    <string name="CampaignCreated">Campaign Created</string>
+
+
+    <!--challenge xml-->
+    <string name="CHALLENGETHEWORLD">CHALLENGE THE WORLD</string>
+    <string name="CHALLENGETITLE">CHALLENGE TITLE</string>
+    <string name="describethischallenge">describe this challenge</string>
+    <string name="PEOPLE">PEOPLE</string>
+    <string name="SELECTCHALLENGETYPE">SELECT CHALLENGE TYPE</string>
+    <string name="WHOCANSEETHISCHALLENGE">WHO CAN SEE THIS CHALLENGE</string>
+    <string name="PUBLIC">PUBLIC</string>
+    <string name="SELECTLOCATION">SELECT LOCATION</string>
+    <string name="POSTTHISCHALLENGE">POST THIS CHALLENGE</string>
+
+    <!--menu2-->
+    <string name="PRIVATE">PRIVATE</string>
+
+    <!--challenge java-->
+    <string name="SelfChallenge">Self Challenge</string>
+    <string name="oneononeChallenge">1-on-1 Challenge</string>
+    <string name="GroupChallenge">Group Challenge</string>
+    <string name="OpenChallenge">Open Challenge</string>
+    <string name="LocationBaseChallenge">Location Base Challenge</string>
+    <string name="ChallengeCreated">Challenge Created</string>
+    <string name="Locationisrequired">Location is required</string>
+    <string name="PeopleNotSelected">People Not Selected</string>
+
+    <!--text challenge xml-->
+    <string name="TypeaTitle">Type a Title</string>
+
+    <!--color picker dialog-->
+    <string name="ChooseBackground">Choose Background</string>
+    <string name="Done">Done</string>
+
+    <!--comment xml-->
+    <string name="WriteaComment">Write a Comment</string>
+
+    <!--comments java-->
+    <string name="Fieldisrequired">Field is required</string>
+
+    <!--CommentAdapter java-->
+    <string name="View">View</string>
+    <string name="replies">replies...</string>
+
+    <!--constants-->
+    <string name="Error">\nError</string>
+    <string name="Success">\nSuccess</string>
+    <string name="NoInternetConnection">No Internet Connection</string>
+    <string name="Somethingwentwrong">Something went wrong</string>
+    <string name="Liked">Liked</string>
+    <string name="Successfully">\nSuccessfully</string>
+
+    <!--challenge type dialog (constants)-->
+    <string name="selfChallenge">Self\nChallenge</string>
+    <string name="OneononeChallenge">1-on-1\nChallenge</string>
+    <string name="groupChallenge">Group\nChallenge</string>
+    <string name="openChallenge">Open\nChallenge</string>
+    <string name="locationBaseChallenge">Location Base\nChallenge</string>
+
+    <!--details xml-->
+    <string name="jointhischallenge">join this challenge</string>
+
+    <!--details java-->
+    <string name="jointhiscampaign">support this campaign</string>
+    <string name="NoHashtags">No Hashtags.</string>
+    <string name="NoDescription">No Description.</string>
+    <string name="ReportedSuccessfully">Reported Successfully</string>
+    <string name="Signintoexplore">Sign-in to explore</string>
+    <string name="Youcannotjoinyourownchallenge">You cannot join your own challenge</string>
+    <string name="Youcannotjointhischallenge">You cannot join this challenge</string>
+    <string name="Blocked">Blocked</string>
+
+    <!--home java-->
+    <string name="Pressbackagaintoexit">Press back again to exit</string>
+
+    <!--maps-->
+    <string name="Search">Search...</string>
+
+    <!--map_radius_dialog xml-->
+    <string name="SelectRadius">Select Radius</string>
+    <string name="OK">OK</string>
+
+    <!--notifications xml-->
+    <string name="NOTIFICATIONS">NOTIFICATIONS</string>
+
+    <!--admire activity xml-->
+    <string name="noadmire">no admire</string>
+    <string name="searchadmire">search admirers</string>
+    <string name="ADMIRERS">"ADMIRERS"</string>
+
+
+    <!--admiring activity xml-->
+    <string name="noadmiring">no admiring</string>
+    <string name="ADMIRING">ADMIRING</string>
+    <string name="searchadmiring">search admiring</string>
+
+
+    <!--profile created adapter-->
+    <string name="Areyousureyouwanttodeletethispost">Are you sure you want to delete this post?</string>
+    <string name="CANCEL">CANCEL</string>
+
+
+    <!--profile off others xml-->
+    <string name="message">MESSAGE</string>
+    <string name="aboutme">about me</string>
+    <string name="CREATED">CREATED</string>
+    <string name="ATTEMPTED">ATTEMPTED</string>
+    <string name="admirers">Admirers</string>
+    <string name="admiring">Admiring</string>
+    <string name="SCORECARD">SCORECARD</string>
+
+    <!--profile off others java-->
+    <string name="ADMIRED">admired</string>
+    <string name="unadmire">unadmire</string>
+    <string name="admire">admire</string>
+    <string name="AdmiredSuccessfully">Admired Successfully</string>
+    <string name="UnadmireSuccessfully">Unadmired Successfully</string>
+
+    <!--profile setup  xml-->
+    <string name="ProfileSetup">Profile Setup</string>
+    <string name="FULLNAME">FULL NAME</string>
+    <string name="BIO">BIO</string>
+    <string name="Tellusabitaboutyourself">Tell us a bit about yourself</string>
+    <string name="EMAILADDRESS">EMAIL ADDRESS</string>
+    <string name="Enteryouremailaddress">Enter your email address</string>
+    <string name="PHONENUMBER">PHONE NUMBER</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="SELECTYOURCOUNTRY">SELECT YOUR COUNTRY</string>
+    <string name="SelectYourCountry">Select Your Country</string>
+    <string name="DATEOFBIRTH">DATE OF BIRTH</string>
+    <string name="Calendar">Calendar</string>
+    <string name="SAVECONTINUE">SAVE &amp; CONTINUE</string>
+
+    <!--search  xml-->
+    <string name="NoProfiles">No Profiles</string>
+    <string name="SEARCH">SEARCH</string>
+    <string name="CHALLENGE">CHALLENGE</string>
+    <string name="CAMPAIGNS">CAMPAIGNS</string>
+    <string name="HASHTAGSS">HASHTAGS</string>
+    <string name="PROFILE">PROFILE</string>
+
+    <!--search  activity java-->
+    <string name="SEARCHCHALLENGES">SEARCH CHALLENGES</string>
+    <string name="SEARCHCAMPAIGNS">SEARCH CAMPAIGNS</string>
+    <string name="SEARCHHASHTAGS">SEARCH HASHTAGS</string>
+    <string name="SEARCHPROFILE">SEARCH PROFILE</string>
+    <string name="NoChallenges">No Challenges</string>
+    <string name="NoCampaigns">No Campaigns</string>
+
+
+    <!--Show all java-->
+    <string name="CHALLENGESNEARME">CHALLENGES NEAR ME</string>
+
+    <!--Show all Adapter java-->
+    <string name="Createdby">Created by</string>
+
+
+    <!--people activity xml-->
+    <string name="WHODOYOUWANTTOCHALLENGE">WHO DO YOU WANT TO CHALLENGE?</string>
+    <string name="searchpeople">search people</string>
+    <string name="NoPeople">No People</string>
+    <string name="FREQUENTLYCHALLENGED">Only users you are admiring can be selected</string>
+    <string name="FREQUENTLYCHALLENGED2">Only the user you are admiring can be selected</string>
+
+    <!--Home xml-->
+    <string name="showall">show all</string>
+    <string name="NoCampaignsAvailable">No Campaigns Available</string>
+    <string name="cHALLENGESNEARME">CHALLENGES\nNEAR ME</string>
+    <string name="NoChallengesAvailable">No Challenges Available</string>
+    <string name="TRENDINGCHALLENGES">TRENDING\nCHALLENGES</string>
+    <string name="NoTrendingChallengeAvailable">No Trending Challenge Available</string>
+
+    <!--new video activity xml-->
+    <string name="SKIP">SKIP</string>
+
+    <!--new onboarding xml-->
+    <string name="Lifeisfullofchallenges">Life is full of challenges</string>
+    <string name="but">but...</string>
+    <string name="onlyafewtakethemon">only a few take them on</string>
+    <string name="Showtheworldyouarestrongerthanyourchallenges">Show the world\nyou are stronger than your challenges</string>
+    <string name="Beyourbossandmakeanythingpossible">Be your boss and\nmake anything possible</string>
+    <string name="CHALLENGES">CHALLENGES</string>
+    <string name="JoinorSetchallengestoanyoneanywhereanytime">Join\nor\nSet challenges\n\nto anyone\nanywhere\nanytime</string>
+    <string name="SupportorCreatecampaignsBethedrivingforce">Support\nor\nCreate campaigns\n\nBe the driving force...</string>
+    <string name="DontlimityourchallengesChallengeyourlimits">Don\'t limit your challenges\nChallenge your limits</string>
+    <string name="Maketheworldabetterplace">Make the world a better place</string>
+    <string name="THEWORLD">THE WORLD!</string>
+    <string name="SignupwithInstagram">Sign up with Instagram\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="SignupwithGoogle">Sign up with Google\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="Signupwithemail">Sign up with email\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="Signupwithphone">Signup with phone\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="Alreadyamember">Already a member?</string>
+    <string name="LOGIN">LOG IN</string>
+    <string name="LOG">LOG</string>
+    <string name="IN">IN</string>
+    <string name="OR">OR</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="NewtoBossble">New to Bossble?</string>
+    <string name="CREATEACCOUNT">CREATE ACCOUNT</string>
+    <string name="FORGOT">FORGOT</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="SENDVERIFICATIONCODE">SEND VERIFICATION CODE</string>
+    <string name="ENTER">ENTER</string>
+    <string name="SIGNUP">SIGN UP</string>
+    <string name="Didnotreceivetheverificationcode">Did not receive the verification code?</string>
+    <string name="Resendcode">Resend code</string>
+    <string name="CREATE">CREATE</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="RESETPASSWORD">RESET PASSWORD</string>
+    <string name="InvalidEmail">Invalid Email</string>
+    <string name="Atleast10digitsrequired">Atleast 10 digits required</string>
+    <string name="WrongVerificationCode">Wrong Verification Code</string>
+    <string name="Passwordnotmatched">"Password not matched"</string>
+    <string name="Required">"Required"</string>
+
+
+    <!--onbaording java-->
+    <string name="GotoAppsettingsPermissionsSMSenableit">Go to App settings > Permissions > SMS > enable it</string>
+    <string name="InvalidCode">Invalid Code</string>
+
+
+
+
+    <string name="crop_image_menu_crop">Done</string>
+
+    <!--Settings-->
+    <string name="EditProfile">"Edit Profile"</string>
+    <string name="BlockedAccounts">"Blocked Accounts"</string>
+    <string name="ReportUserPost">"Report User Post"</string>
+    <string name="Legal">"Legal(T&amp;C)"</string>
+    <string name="Support">"Support"</string>
+    <string name="SharetheApp">"Share the App"</string>
+    <string name="NotificationsSetting">"Notifications Setting"</string>
+    <string name="Languages">"Languages"</string>
+    <string name="Logout">"Logout"</string>
+    <string name="DeactivateAccount">"Deactivate Account"</string>
+    <string name="Settings">"Settings"</string>
+
+    <!--Edit profile-->
+
+    <string name="FullName">"Full Name"</string>
+    <string name="COUNTRY">"COUNTRY"</string>
+    <string name="Country">"Country"</string>
+    <string name="SECURITY">"SECURITY"</string>
+    <string name="ChangePassword">"Change Password"</string>
+    <string name="SAVE">"SAVE"</string>
+    <string name="ProfileUpdated">"Profile Updated"</string>
+
+
+    <!--Blocked User-->
+
+    <string name="SearchBlockedUsers">"Search Blocked Users"</string>
+
+    <!--Report User-->
+    <string name="NoReportedPost">"No Reported Post"</string>
+    <string name="ReportPost">"Report Post"</string>
+    <string name="SearchReportPost">"Search Report Post"</string>
+
+
+    <!-- Change Password-->
+
+
+    <string name="CURRENTPASSWORD">"CURRENT PASSWORD"</string>
+    <string name="CurrentPassword">"Current Password"</string>
+    <string name="NEWPASSWORD">"NEW PASSWORD"</string>
+    <string name="NewPassword">"New Password"</string>
+    <string name="CONFIRMATIONPASSWORD">"CONFIRMATION PASSWORD"</string>
+    <string name="PasswordChanged">"Password Changed"</string>
+
+
+    <!-- Notification Setting-->
+
+    <string name="PrivateMessages">"Private Messages"</string>
+    <string name="AdmireAdmiring">"Admirers/Admiring"</string>
+    <string name="ChallengeRequest">"Challenge Request"</string>
+    <string name="Comments">"Comments"</string>
+    <string name="Likes">"Likes"</string>
+    <string name="ChatNotifications">"Chat Notifications"</string>
+    <string name="Near">"Near By(ON/OFF)"</string>
+
+    <!--blockuser_itemlayout-->
+    <string name="UNBLOCK">"UNBLOCK"</string>
+
+    <!--deactivate account java-->
+    <string name="AccountDeactivated">"Account Deactivated"</string>
+    <string name="AlreadyAttempted">"Already Attempted"</string>
+
+
+    <string name="Yourphonenumberwillnotbeusedbytheapporanyotheruseroftheapp">"*Your phone number will not be used by the app or any other user of the app"</string>
+    <string name="Youremailwillnotbeusedbytheapporanyotheruseroftheapp">"*Your email will not be used by the app or any other user of the app"</string>
+
+    <string name="joined">"JOINED"</string>
+
+    <!--support texts-->
+    <string name="supporttxt">"Thank you for choosing to be part of our community at Bossble UG (“Company”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at our support email."</string>
+
+    <!--terms texts-->
+    <string name="termstxt">"Bossble is a social media platform enabling individuals to connect and engage with each other by creating or joining challenges and or campaigns. Challenges are of competitive mode with participants being ranked based on people's choice, whereas campaigns are non-competitive.. This is why all users must explicitly agree to these Terms of Use and License Conditions.\n\nThe most important aspects have been summarized for you. This summary is not complete and not final. The detailed Terms of Use and License Conditions result from the subsequent conditions from this summary.\n\nAll users are responsible for damages caused themselves or caused to third parties with respect to their lives, bodies and health during the performance of a challenge in the frame of the conditions of these Terms of Use and License Conditions. Official authorities (e.g. police or emergency medical services) are to be contacted in case of a medical emergency or in other emergencies during the use of the app. The app is not designed to answer emergency calls.\n\nDangerous challenges that go beyond the individual skills of the acting or performing individual, as well as challenges that constitute an offense are forbidden. Content that contains pornographic, inadequate sexual or violent, extremist, discriminatory, suicide-promoting presentations or content that degrades other persons or groups of persons, contains bullying, drug consumption, spam or malicious code (“viruses”) distribution, infringes laws or these Terms of Use and License Conditions or contains otherwise inadequate or offensive content is forbidden. Content that is not related to challenges is forbidden. Users must not instigate, convince or force others to do such challenges or to generate, use or distribute such content.\n\nUsers must ensure that they have the right to content in order to upload it to the Internet, edit and distribute it, in line with these Terms of Use and License Conditions. This particularly applies to all required rights of use and exploitation rights for trademark protected or otherwise protected material, such as for instance videos and images.\n\nBOSSBLE implements adequate measures in order to detect and filter infringements against the Terms of Use and License Conditions. In particular, BOSSBLE reserves the right to block content and possibly users who infringe these conditions without notice or delete content and user accounts. Users can tag such content and notify BOSSBLE. BOSSBLE reacts to the notification of such content within 24 hours."</string>
+
+    <string name="termstxt2">"1. Inclusion of the Terms of Use and License Conditions\n\n1.1 The BOSSBLE UG, Schlifweg 9a, 44263 Dortmund, Germany, email:info@bossble.com, Germany (hereinafter called “BOSSBLE”) provides its software application BOSSBLE App (hereinafter called “mobile app”) for smart phones and tablets (called hereinafter “mobile devices”) solely based on the following Terms of Use and License Conditions (hereinafter called “Terms of Use”) for download, installation and limited use.\n\n1.2 In some cases the download and the installation of mobile apps may require accepting special Terms of Use of the App Stores. In the case of contradictions with these Terms of Use the special Terms of Use of the App Stores have priority.\n\n1.3 Contract partner of BOSSBLE according to these Terms of Use is that person who downloads the app from the App Store and installs it on their mobile device (Contract partner and BOSSBLE are hereinafter called “Contract parties”). Other persons that are provided access to the app on the mobile device of the contract partner are not called contract partners of BOSSBLE but users (called hereinafter “user”). A contract partner who is a natural person is also called user. The contract partner and their users may not have partially or fully limited legal capacity. Contract partners and users that are minors require prior consent of the parents or legal guardians. Only if the requirements of Article 1.3 are met, the person may use the app.\n\n1.4 The contract partner will independently and actively inform the user, who is using the app on the contract partner’s mobile device, of these Terms of Use and the Data Privacy Information and ensure their consent to the Terms of Use prior to use.\n\n1.5 These Terms of Use shall not create rights for or against third parties. They are exclusively valid between the contract parties. In particular there will be no rights against the manufacturer of a mobile device, on which the mobile app will be used, the operating system provider or against an App Store.\n\n1.6 With the use of the app, the contract partner agrees to the valid version of the Terms of Use. The user must additionally expressively accept them during the registration process according to Article 2 via mouse click.\n\n1.7 If the contract partner or a user does not agree to be bound to these Terms of Use, they may not use the app.\n\n1.8 The Terms of Use are valid as of August 24, 2020. Future changes of these Terms take place in accordance with Article 13.\n\n2. Registration\n\n2.1 The contract partner must register via the mobile app prior to the first installation of a mobile app. There are different registration options to be chosen from. These are currently a registration via email address or phone number, via an existing Facebook account via “Facebook-Login“, via an existing Google account via “Google Sign-In“. Further information can be found in the Data Privacy Information.\n\n2.2 All information provided during the registration must be accurate and complete.\n\n3. Download of the Mobile App via an App Store\n\n3.1 The provision of the mobile app takes place for the installation on a mobile device and for the subsequent use on the Internet. The mobile app can either be downloaded in the Google Play Store or in the Apple App Store. The Google Play Store is operated by Google LLC, Amphitheatre Parkway 1600, 94043 Mountain View, CA, USA (“Google”), www.google.com, the Apple App Store by Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA, www.apple.com and its affiliated companies (Apple App Store and Google Play Store are used without differentiation and are called “App Store” in these Terms of Use).\n\n3.2 To some extent, there are additional conditions for the use of an App Store on the part of Google or Apple. BOSSBLE is neither responsible for these conditions nor can BOSSBLE influence them. BOSSBLE is not affiliated with the owners or operators of the App Stores and does not represent them.\n\n3.3 The contract partner recognizes that the owners and operators of the App Stores are not obliged to provide support or maintenance for the mobile app. All rights and obligations in accordance to these Terms of Use are between the contract partner and BOSSBLE. The contract partner can contact BOSSBLE under the above mentioned contact information or via the mobile app in case of questions.\n\n4. Installation of a Mobile App, Technical Requirements\n\n4.1 The mobile app is exclusively provided for the installation and use on a mobile device that belongs to the contract partner or underlies their legitimate control. The used mobile devices must be registered with an app store in the sense of Article 3.1.\n\n4.2 The current version of the operating system Google Android or Apple iOS must be installed on the mobile device. The mobile app may function on other operating systems and/or versions, however a full functionality, as well as a complete and accurate reproduction of information is technically not ensured.\n\n4.3 It is the responsibility of the contract partner to ensure that the used mobile devices are appropriate for the use of the App Store and the mobile app, all relevant access privileges are granted and that, for instance, no installation or usage-compromising third-party software is installed on a mobile device. The installation of the mobile app may not be interrupted or modified as a correct installation and use will otherwise be prevented or it may lead to data loss on the mobile device."</string>
+
+    <string name="termstxt3">"5. Use of the Mobile App\n\n5.1 The contract partner and users may only use the mobile app for legal purposes while respecting all applicable and valid laws and terms of use and only in the frame of the expressively or visibly intended possible uses or purposes of the mobile app.\n\n5.2 Dangerous challenges that go beyond the individual skills of the acting or performing individual, as well as challenges that constitute an offense are forbidden. Content that contains pornographic, inadequate sexual or violent, extremist, discriminatory, suicide-promoting presentations or content that degrades other persons or groups of persons, contains bullying, drug consumption, spam or malicious code (“viruses”) distribution, infringes laws or these Terms of Use or contains otherwise inadequate or offensive content is forbidden. Content that is not related to challenges is forbidden. The contract partner and users must not instigate, convince or force others to do such challenges or to generate, use or distribute such content.\n\n5.3 Contract partners and users must ensure that they have the right to content in order to upload it to the Internet, edit and distribute it, in line with these Terms of Use. This particularly applies to all required rights of use and exploitation rights for trademark protected or otherwise protected material, such as for instance videos and images.\n\n5.4 The improper use of the mobile app is forbidden, for instance the decompiling or hacking of the mobile app or of the IT systems of BOSSBLE, as well as the disclosure of information provided via the mobile app to third parties of similar or identical mobile apps or information offers.\n\n5.5 BOSSBLE implements adequate measures in order to detect and filter infringements against these Terms of Use. In particular, BOSSBLE reserves the right to block content and possibly users who infringe these conditions without notice or delete content and user accounts. Users can tag such content and notify BOSSBLE. BOSSBLE reacts to the notification of such content within 24 hours.\n\n5.6 BOSSBLE can forbid the further usage of the service to the contract partner and every user at any time if BOSSBLE notices a possible use that interrupts the flawless technical availability or integrity of the mobile app. In case of a blockage the mobile app cannot and may not be used, neither under a new installation.\n\n5.7 Official authorities (e.g. police or emergency medical services) are to be contacted in case of a medical emergency or in other emergencies during the use of the mobile app. The mobile app is not designed to answer emergency calls.\n\n5.8 The contract partner is obliged to inform and notify BOSSBLE immediately of any improper use of their mobile app and security-relevant events in relation with the use of the mobile app.\n\n6. Compensation, Costs\n\n6.1 The download and the installation of the mobile app are free of charge.\n\n6.2 Costs can occur during the use of the mobile app depending on the used cellular service or data plan connection charges based on the contract with the respective access provider. The use takes place without compensation of BOSSBLE by the contract partners or users.\n\n7. Rights of Use\n\n7.1 The contract partner acquires a non-exclusive limited right to use the mobile app for themselves in the program code worldwide for the duration of this contract. Further rights, particularly for partial or complete editing, use, transfer to third parties or sublicensing, do not exist. This does not apply to the relationship of the contract partner and their legitimate users, who are using the mobile app on the mobile device of the contract partner, with respect to the sublicensing. In this case the contract partner may grant the users the right of use that they derived depending on the type and extent of use.\n\n7.2 The right of use does in no case include the disclosure of the source code. Article 69 lit. d) and lit.\ne) German Copyright Law (UrhG) remain untouched thereof.\n\n7.3 BOSSBLE acquires a free of charge, non-exclusive, permanent and irrevocable right of use for the copyrighted or otherwise legally protected content that is published by the contract partner or a user on the mobile app in order to render the respective function of the mobile app and in the respectively required extent. This includes for instance the storage and provision of such content on a server in order to be able to display or transmit it to other users and authorized recipients. The Right of Use therefore particularly includes the right to utilize and technically multiply the content or to edit it accordingly so that the desired quality can be displayed via the mobile app to other users and authorized recipients.\n\n7.4 If the contract partner or users publish their own content on the mobile app, it has to be ensured by them that they possess all the required rights, particularly the rights of use of copyrighted or otherwise protected material such as for instance of videos or images.\n\n7.5 The software of the mobile app may not be reverse engineered nor may it be tried to extract the source code in any other way.\n\n7.6 If there is open source software contained in the mobile app, the license conditions of this software can have priority over the copyright terms of use of BOSSBLE.\n\n7.7 A breach of the conditions of these Terms of Use entitles BOSSBLE to recall the Right of Use and to terminate this contract without notice unless only an insignificant breach is present.\n\n8. Actuality of Information\n\nAll information is delivered via the mobile app with a timely delay due to technical reasons, which can take several minutes or longer in rare cases. Information can therefore not be considered to be real time requests.\n\n9. Exclusion and limitation of warranty and liability\n\n9.1 The contract partner is solely and fully responsible for all actions that are carried out while using the mobile app on their mobile device.\n\n9.2 Due to the nature of the Internet, the necessity of using a telecommunication connection through a third service provider for the use of the mobile app, as well as the necessity of the interaction with the individual mobile device of the user, other software and other computer systems, BOSSBLE cannot ensure a continuous, uninterrupted availability of the mobile app and the display of content. Information is partially displayed with a delay.\n\n9.3 The mobile app is mainly intended for creative, joy and happiness, promoting the display of content and information of the users and BOSSBLE. All depictions of the mobile app are purely non-binding with respect to the content. BOSSBLE is however striving to display information in the frame of these Terms of Use correctly, completely and securely. Nevertheless, it cannot be excluded that information is incomplete, incorrect, or no longer up-to-date, e.g. because information or data of third parties was changed or published wrong. Therefore, BOSSBLE does not assume warranty or liability for the completeness, correctness, integrity and actuality of the content published via the mobile app.\n\n9.4 The contract partner and the users acknowledge that no warranty or liability claims of BOSSBLE against other users exist, via whom recourse can be taken.\n\n9.5 BOSSBLE does not assume warranty or liability for any quality defects and defects of the mobile app.\n\n9.6 BOSSBLE does not assume warranty or liability for damages through the installation or the use of the mobile app on a mobile device or the stored data.\n\n9.7 BOSSBLE does not assume warranty or liability that the mobile app is free from viruses or malicious code as the administration of the App Stores, their provision for a download and the interaction with other software during the use on the mobile device are not subject to the control of BOSSBLE. BOSSBLE is striving however to provide technical safety with adequate measures considering the state of the art in their domain and within their capabilities.\n\n9.8 BOSSBLE does not provide expressive or implicit warranties or assurances.\n\n9.9 Aforesaid exclusions and limitations of Article 9 do not apply in case of liability of BOSSBLE according to the product liability law or intentional or grossly negligent breaches of duty or the violation of life, body or health of a person because of BOSSBLE. The contract partner and all users are responsible for damages caused themselves and for damages caused to the life, body and health of third parties when carrying out a challenge according to Article 9."</string>
+
+    <string name="termstxt4">"10. Infringement of Proprietary Rights\n\nThe contract parties will notify each other without undue delay in case of an imminent infringement of proprietary rights or other legal infringements in connection with the use of the mobile app, particularly, if any claims are made against a party or if there is evidence that it is about to happen. The contract parties may not settle, provide acknowledgments or make other concessions without the written consent of the other party with respect to the asserted claim. If a claim or proceedings are instituted due to an infringement of rights or are imminent based on sound judgment, BOSSBLE may take measures at its own cost to avoid the infringement or the alleged infringement of these rights. This can be achieved by BOSSBLE, particularly through unprotected modification or replacement of a service or through acquiring a license which permits the use.\n\n11. Duration and Cancellation\n\n11.1 These Terms of Use are valid for an indefinite period.\n\n11.2 BOSSBLE and the contract partner can cancel the user relationship at any time. The contract partner is given the opportunity beforehand to back-up their content. The cancellation can be submitted in text form, i.e. via email, or via message on the mobile app.\n\n11.3 Persons who still have the mobile app installed on their mobile device after the cancellation will uninstall it from their mobile device immediately.\n\n12. Termination or Change of the Mobile App\n\n12.1 The provision of a mobile app is a voluntary service. There is no legal right to its continuance.\n\n12.2 BOSSBLE reserves the right to partially or fully, temporarily or permanently, change, supplement or limit the mobile app after prior notice considering the interests of the contract partner. This applies to a mobile app downloaded again from the App Store or the download of software updates (called hereinafter “updates”) of the mobile app. A direct change of the mobile app on the mobile device through BOSSBLE does not take place.\n\n12.3 If updates are released for the mobile app, they must possibly be installed first in order to continue the safe, uninterrupted use to its full functional form. As a general rule, updates are intended to improve the operating comfort, the expansion of functions or the elimination of possible safety or legal deficiencies. The cancellation option according to Article 11 remains untouched thereof.\n\n12.4 The import of updates depends on the App Store, its access software and the individual mobile devices of the contract partners. Updates cannot be solely initiated by BOSSBLE, but must be agreed to by the contract partner, if necessary in the settings of their mobile device.\n\n13. Change of these Terms of Use\n\nBOSSBLE reserves the right to change or add to these Terms of Use in parts or as a whole, particularly in order to eliminate regulatory loopholes due to new laws, new jurisdictions or new functions of the mobile app. The contract partner is informed accordingly via the email address provided during registration. They can download a storable version of it. The contract partner has the right to submit an explicit declaration with regards to the amended Terms of Use within one month after receipt of the notification or to terminate the user relationship in accordance with Article 11. BOSSBLE will inform the user of the right of termination together with the announcement. The new Terms of Use are effective one month after receipt of the notice. The existing Terms of Use are in effect until the termination takes effect. Article 11 remains untouched thereof.\n\n14. Data Privacy\n\nBOSSBLE observes all applicable data privacy laws when processing personal data, particularly the EU General Data Protection Regulation (EU GDPR).\n\n15. Applicable Law and Place of Jurisdiction\n\n15.1 The download, the installation and the use of the mobile app, as well as these Terms of Use are subject to the law of the Federal Republic of Germany under the exclusion of the UN Sales Convention\n\n15.2 If the contract partner is a user, all disputes due to or in association with these Terms of Use or the use of the mobile app are subject to the legal regulations with respect to the place of jurisdiction. Dortmund/Germany is the place of jurisdiction, if permissible, if the contract partner is an entrepreneur.\n\n16. Severability Clause\n\n16.1 It does not affect the effectiveness of the other terms or the Terms of Use as a whole, should one term of these Terms of Use be or become partially or fully ineffective, unenforceable or incomplete.\n\n16.2 In the presence of an ineffective, unenforceable or incomplete term, the contracting parties shall agree to one term at reasonable discretion that considers the interest of both contract parties and the aspired contract purpose adequately.\n\n16.3 Article 16.1 and 16.2 come into effect if one term is ineffective due to its temporal, personal, spatial, material scope or with respect to the amount."</string>
+
+
+</resources>

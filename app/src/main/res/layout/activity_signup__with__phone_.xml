@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bossble_full_logo_new"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:id="@+id/logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="30dp"
+                android:id="@+id/txtenter"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHONE NUMBER"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtenter"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtphone"
+                />
+
+
+
+
+            <com.hbb20.CountryCodePicker
+                app:defaultCode="92"
+                android:layout_marginLeft="20dp"
+                android:layout_width="130dp"
+                android:layout_height="?actionBarSize"
+                android:layout_below="@id/txtphone"
+                android:id="@+id/select_code"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:contentColor="@color/white"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/country_code_shape"
+                android:inputType="number"
+                app:textSize="16dp"
+                android:gravity="center"
+
+                >
+            </com.hbb20.CountryCodePicker>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="80dp"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/phone_shape"
+                android:layout_below="@id/txtphone"
+                android:layout_toRightOf="@id/select_code"
+                android:id="@+id/edphone"
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:maxLength="14"
+                />
+
+<!--
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+-->
+
+            <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_below="@id/edphone"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_curve_transparent"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                app:tint_color="@android:color/white"
+                android:id="@+id/edpassword"
+                android:maxLines="1"
+
+                />
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/edpassword"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_selector"
+                android:text="SEND VERIFICATION CODE"
+                android:textAllCaps="false"
+                android:id="@+id/btnverify"
+                android:elevation="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/btnverify"
+                android:layout_marginTop="?actionBarSize"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:id="@+id/l11111"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already a member?"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/txtmember"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="LOG IN"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/txtlogin"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+
+
+
+</RelativeLayout>

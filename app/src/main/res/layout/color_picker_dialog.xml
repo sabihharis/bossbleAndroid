@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/white_curve"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChooseBackground"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/heading"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:id="@+id/linear">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="4">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#275EA3"
+                    android:id="@+id/one"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#5C88BF"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/two"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#51C2EE"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/three"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#56AFB5"
+                    android:id="@+id/four"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#7CBA52"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/five"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#8BC453"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/six"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#F8B230"
+                    android:id="@+id/seven"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#E97135"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/eight"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#C1987C"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/nine"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#E03D46"
+                    android:id="@+id/ten"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#FF4640"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/eleven"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#D07676"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/twelve"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#BD89AE"
+                    android:id="@+id/thirteen"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#9047F0"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fourteen"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30sp"
+                    android:background="#9086BB"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fifteen"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Done"
+            android:id="@+id/done"
+            android:layout_below="@+id/linear"
+            android:layout_alignEnd="@+id/linear"
+            android:paddingRight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/dark_blue"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

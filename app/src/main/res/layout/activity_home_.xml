@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Home_Activity"
+    android:background="@color/white"
+    android:id="@+id/root"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:src="@drawable/screen_header"
+        android:scaleType="centerCrop"
+        android:id="@+id/header"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bossble_full_logo_new"
+        android:id="@+id/fulllogo"/>
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        app:refreshColor="@color/dark_blue"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sv"
+            android:layout_below="@+id/header">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/chat_icon"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/chat"
+                    />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CAMPAIGNS"
+                    android:layout_below="@+id/chat"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_blue_f"
+                    android:id="@+id/capmpaigns_heading"/>
+
+                <TextView
+
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/showall"
+                    android:layout_below="@+id/chat"
+                    android:layout_marginTop="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/showall_campaigns"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/btnshowall"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NoCampaignsAvailable"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/capmpaigns_heading"
+                    android:layout_marginTop="75dp"
+                    android:id="@+id/nocampaigns"
+                    android:visibility="gone"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/capmpaigns_heading"
+                    android:id="@+id/campaignsRV"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CHALLENGESNEARME"
+                    android:layout_below="@+id/campaignsRV"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_blue_f"
+                    android:id="@+id/nearchallenges_heading"/>
+
+                <TextView
+                   android:visibility="gone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/showall"
+                    android:layout_below="@+id/campaignsRV"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btnshowall"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/showall_nearchallenges"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NoChallengesAvailable"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/nearchallenges_heading"
+                    android:layout_marginTop="110dp"
+                    android:id="@+id/nonearby"
+                    android:visibility="gone"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_below="@+id/nearchallenges_heading"
+                    android:id="@+id/nearchallengesRV"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TRENDINGCHALLENGES"
+                    android:layout_below="@+id/nearchallengesRV"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_blue_f"
+                    android:id="@+id/trendingchallenges_heading"/>
+
+                <TextView
+                  android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/showall"
+                    android:layout_below="@+id/nearchallengesRV"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/showall_trendingchallenges"
+                    android:padding="5dp"
+                    android:background="@drawable/btnshowall"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NoCampaignsAvailable"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/trendingchallenges_heading"
+                    android:layout_marginTop="?actionBarSize"
+                    android:id="@+id/notrending"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/trendingchallenges_heading"
+                    android:id="@+id/trendingchallengesRV"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LoadMore"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="80dp"
+                    android:id="@+id/loadmore"
+                    android:layout_below="@+id/trendingchallengesRV"
+                    android:visibility="gone"
+                    />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/createdialog_curve"
+        android:id="@+id/relative"
+        android:visibility="gone"
+        android:paddingBottom="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/whatdoyouwanttocreate"
+            android:textSize="18sp"
+            android:id="@+id/text"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_text_curve"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+        <!--
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/text"
+                    android:weightSum="2"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    >
+        -->
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/create_campaign_icon"
+            android:text="@string/campaign"
+            android:drawablePadding="10dp"
+            android:id="@+id/createcampaign"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/create_challenge_icon"
+            android:text="@string/challenge"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/createchallenge"
+            android:layout_below="@+id/text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"/>
+
+
+        <!--
+                </LinearLayout>
+        -->
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_navigation"></include>
+
+</RelativeLayout>
+
+
+

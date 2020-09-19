@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:id="@+id/helper"
+        >
+
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.bossble.bossble.Maps.MapsActivity"
+        android:layout_below="@id/helper"/>
+
+    <fragment
+        android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_purple_curve"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:id="@+id/done"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_mark"
+        android:layout_centerInParent="true"
+        android:id="@+id/mark"/>
+
+    <SearchView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/Search"
+        android:id="@+id/search"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/maps_search_curve">
+
+    </SearchView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/autocomplete_fragment"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_mylocation"
+        android:padding="10dp"
+        android:tint="@color/dark_blue"
+        android:id="@+id/mylocation"/>
+
+</RelativeLayout>

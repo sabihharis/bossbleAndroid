@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Challenges.Text_Challenge_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear"
+        android:id="@+id/relative"
+        android:background="#275EA3">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:hint="@string/TypeaTitle"
+            android:textColorHint="@color/alphawhite"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:id="@+id/text"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/dark_blue">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_mark"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:id="@+id/emoji"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fonts"
+            android:padding="10dp"
+            android:id="@+id/fonts"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_color"
+            android:padding="10dp"
+            android:id="@+id/color" />
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_icon"
+        android:layout_alignBottom="@+id/linear"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="28dp"
+        android:id="@+id/post"
+        app:riv_border_color="@color/golden"
+        app:riv_border_width="0.5dp"
+        app:riv_corner_radius="50dp"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/avibackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+
+        />
+
+
+</RelativeLayout>
